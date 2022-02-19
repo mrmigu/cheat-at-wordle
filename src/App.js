@@ -13,7 +13,7 @@ function App() {
         <div className='links'>
           <NavLink 
             className="nav_link" 
-            to="/" 
+            to="/cheat-at-wordle/" 
             style={({ isActive }) => {
               return {
                 fontWeight: isActive ? "900" : "normal"
@@ -24,7 +24,7 @@ function App() {
           </NavLink>
           <NavLink 
             className="nav_link" 
-            to="/bestwords" 
+            to="/cheat-at-wordle/bestwords" 
             style={({ isActive }) => {
               return {
                 fontWeight: isActive ? "900" : "normal"
@@ -35,7 +35,7 @@ function App() {
           </NavLink>
           <NavLink 
             className="nav_link" 
-            to="/stats" 
+            to="/cheat-at-wordle/stats" 
             style={({ isActive }) => {
               return {
                 fontWeight: isActive ? "900" : "normal"
