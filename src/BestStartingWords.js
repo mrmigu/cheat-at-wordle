@@ -28,6 +28,7 @@ function BestStartingWords() {
       return {word: word, greenLetters, yellowLetters};
     })
     .sort((a,b) => b.greenLetters  === a.greenLetters ? b.yellowLetters - a.yellowLetters : b.greenLetters - a.greenLetters)
+    .slice(0, WORD_LIMIT)
     setBestStartingWords(bestWords);
   }
 
@@ -50,7 +51,7 @@ function BestStartingWords() {
             </tr>
           </thead>
           <tbody>
-            {bestStartingWords.slice(0, WORD_LIMIT).map(bestWord => {
+            {bestStartingWords.map(bestWord => {
               return (<tr key={"word_" + bestWord.word}>
                   <td>{bestWord.word}</td>
                   <td>{Math.round(1000 * bestWord.greenLetters / words.length) / 10}%</td>
