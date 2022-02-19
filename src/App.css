@@ -2,37 +2,63 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .header {
+  height: 50px;
+  background-color: #ffa500;
+  position: relative;
+  margin-bottom: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App .header .page_title {
   color: white;
+  position: absolute;
+  left: 0px;
+  bottom: -11px;
+  margin: 0px;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.App .links {
+  padding-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .links .nav_link {
+  margin: 25px;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+}
+
+.App .letter {
+  width: 50px;
+  height: 75px;
+  font-size: 40px;
+  margin: 5px;
+  text-align: center;
+}
+
+.App .letters_list {
+  margin: 10px;
+}
+
+ul {
+  margin: auto;
+  height: 400px;
+  width: 75%;
+  column-count: 8;
+  column-gap: 20px;
+  overflow-y: scroll;
+}
+
+.App table {
+  margin: auto;
+  border: 1px solid black;
+}
+
+.App table th, 
+.App table td{
+  border: 1px solid black;
+  padding: 5px;
 }

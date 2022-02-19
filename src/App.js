@@ -1,23 +1,58 @@
-import logo from './logo.svg';
+import { NavLink, Route, Routes } from 'react-router-dom';
+import Statistics from './Statistics';
+import Cheat from './Cheat';
+import BestStartingWords from './BestStartingWords';
 import './App.css';
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='header'>
+        <div className='page_title'>CHEAT AT WORDLE</div>
+        <div className='links'>
+          <NavLink 
+            className="nav_link" 
+            to="/" 
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "900" : "normal"
+              };
+            }}
+          >
+            Cheat
+          </NavLink>
+          <NavLink 
+            className="nav_link" 
+            to="/bestwords" 
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "900" : "normal"
+              };
+            }}
+          >
+            Best Starging Words
+          </NavLink>
+          <NavLink 
+            className="nav_link" 
+            to="/stats" 
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "900" : "normal"
+              };
+            }}
+          >
+            Letter Statistics
+          </NavLink>
+        </div>
+      </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<Cheat />} />
+          <Route path="stats" element={<Statistics />} />
+          <Route path="bestwords" element={<BestStartingWords />} />
+        </Routes>
+    </div>
     </div>
   );
 }
