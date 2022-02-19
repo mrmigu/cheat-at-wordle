@@ -48,9 +48,9 @@ function App() {
       </div>
       <div>
         <Routes>
-          <Route path="/" element={<Cheat />} />
-          <Route path="stats" element={<Statistics />} />
-          <Route path="bestwords" element={<BestStartingWords />} />
+          <Route path="/cheat-at-wordle/" element={<Cheat />} />
+          <Route path="/cheat-at-wordle/stats" element={<Statistics />} />
+          <Route path="/cheat-at-wordle/bestwords" element={<BestStartingWords />} />
         </Routes>
     </div>
     </div>
