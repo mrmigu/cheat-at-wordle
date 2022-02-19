@@ -31,7 +31,7 @@ function App() {
               };
             }}
           >
-            Best Starging Words
+            Best Starting Words
           </NavLink>
           <NavLink 
             className="nav_link" 
