@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cheat-at-wordle/static/css/main.72262eb7.css",
-    "main.js": "/cheat-at-wordle/static/js/main.d80a3813.js",
+    "main.js": "/cheat-at-wordle/static/js/main.5a6892b2.js",
     "static/js/787.1a8ee83a.chunk.js": "/cheat-at-wordle/static/js/787.1a8ee83a.chunk.js",
     "index.html": "/cheat-at-wordle/index.html",
     "main.72262eb7.css.map": "/cheat-at-wordle/static/css/main.72262eb7.css.map",
-    "main.d80a3813.js.map": "/cheat-at-wordle/static/js/main.d80a3813.js.map",
+    "main.5a6892b2.js.map": "/cheat-at-wordle/static/js/main.5a6892b2.js.map",
     "787.1a8ee83a.chunk.js.map": "/cheat-at-wordle/static/js/787.1a8ee83a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72262eb7.css",
-    "static/js/main.d80a3813.js"
+    "static/js/main.5a6892b2.js"
   ]
 }
