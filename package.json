@@ -2,6 +2,7 @@
   "name": "wordle-helper",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mrmigu.github.io/cheat-at-wordle/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
